@@ -3,13 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>WoodCalc</title>
 </head>
 <body>
     <main class="main-container">
-        <form action="#" method="post">
-            <fieldset class="current-sizes">
-                
+        <form class="request-form" action="#" method="post">
+            <fieldset class="request-form__fieldset plank-chooser">
+                <legend class="plank-chooser__title">Имеющиеся заготовки</legend>
+                <div class="plank-chooser__content">
+                    <input class="plank-chooser__input visually-hidden" type="checkbox" name="short-plank" id="short-plank" checked>
+                    <label class="plank-chooser__item" for="short-plank">3000мм</label>
+                    <input class="plank-chooser__input visually-hidden" type="checkbox" name="short-plank" id="long-plank" checked>
+                    <label class="plank-chooser__item" for="long-plank">6000мм</label>
+                </div>
+            </fieldset>
+            <fieldset class="request-form__fieldset">
+
             </fieldset>
         </form>
     </main>
